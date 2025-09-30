@@ -23,14 +23,18 @@ class Produto {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     
-    public function update($id, $nome, $preco, $id_fornecedor) {
-        $stmt = $this->pdo->prepare("UPDATE produtos SET nome = ?, preco = ?, id_fornecedor = ? WHERE id = ?");
-        return $stmt->execute([$nome, $preco, $id_fornecedor, $id]);
-    }
-    
-    public function delete($id) {
-        // A integridade referencial na cesta é cuidada pelo CASCADE da tabela cestas_produtos
-        $stmt = $this->pdo->prepare("DELETE FROM produtos WHERE id = ?");
-        return $stmt->execute([$id]);
-    }
+    // classes/Produto.php
+
+// ... (código existente)
+
+public function update($id, $nome, $preco, $id_fornecedor) {
+    $stmt = $this->pdo->prepare("UPDATE produtos SET nome = ?, preco = ?, id_fornecedor = ? WHERE id = ?");
+    return $stmt->execute([$nome, $preco, $id_fornecedor, $id]);
+}
+
+public function delete($id) {
+    // A integridade referencial na cesta é cuidada pelo CASCADE
+    $stmt = $this->pdo->prepare("DELETE FROM produtos WHERE id = ?");
+    return $stmt->execute([$id]);
+}
 }
