@@ -12,7 +12,7 @@
 
 | Nome Completo | RA |
 | :--- | :--- |
-| **Paulo Ricardo de Almeida** | 60003496 |
+| **Paulo Ricardo de Almeida** | 60003436 |
 | **Felipe Coronato** | 60300641 |
 | **Leonardo Fontana da Silva** | 60003437 |
 
