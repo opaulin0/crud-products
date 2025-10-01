@@ -24,7 +24,7 @@
 
 O modelo de dados implementa o relacionamento **N:M (Muitos para Muitos)** entre Cestas e Produtos, através da tabela `cestas_produtos`.
 
-![Diagrama do Banco de Dados do Sistema](DER.png)
+![Diagrama do Banco de Dados do Sistema](docs/DER.png)
 
 ### 2.2 Esboços de Telas (Wireframes Figma)
 
