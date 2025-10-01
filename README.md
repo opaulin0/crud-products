@@ -30,6 +30,12 @@ O modelo de dados implementa o relacionamento **N:M (Muitos para Muitos)** entre
 
 Os esboços visuais das áreas principais do sistema.
 
+#### Tela de Login 
+![Esboço da tela de Login](docs/Login.png)
+
+#### Tela de Geral 
+![Esboço da tela Geral](docs/TelaGeral.png)
+
 #### Tela de Cadastros (CRUD)
 ![Esboço da tela de Cadastros e CRUD](docs/cadastro.png)
 
